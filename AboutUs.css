@@ -1,0 +1,25 @@
+.about-us {
+  background: #F4F1EA;
+  padding: 64px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us__content {
+  max-width: 720px;
+  text-align: left;
+}
+
+.about-us__content h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #1F3D2E;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.about-us__content p {
+  color: #3C4A42;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}

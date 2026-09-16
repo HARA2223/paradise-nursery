@@ -1,0 +1,150 @@
+.cart-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 72px;
+}
+
+.cart-page__title {
+  font-family: 'Poppins', sans-serif;
+  color: #1F3D2E;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.cart-page__total {
+  color: #3C4A42;
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+}
+
+.cart-page__empty {
+  color: #7A8780;
+  font-style: italic;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #FFFFFF;
+  border: 1px solid #E4DFD2;
+  border-radius: 6px;
+  padding: 14px 18px;
+}
+
+.cart-item__thumbnail {
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.cart-item__details {
+  flex: 1;
+  min-width: 0;
+}
+
+.cart-item__name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #1F3D2E;
+  margin: 0 0 4px;
+}
+
+.cart-item__unit-price,
+.cart-item__subtotal {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #5A6B60;
+}
+
+.cart-item__quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.cart-item__quantity button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #C9C2AF;
+  background: #F4F1EA;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.cart-item__quantity span {
+  min-width: 18px;
+  text-align: center;
+  font-weight: 600;
+  color: #1F3D2E;
+}
+
+.cart-item__delete {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid #C96A4B;
+  color: #C96A4B;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.cart-item__delete:hover {
+  background: #C96A4B;
+  color: #FFFFFF;
+}
+
+.cart-page__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cart-page__continue,
+.cart-page__checkout {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.cart-page__continue {
+  background: #E4DFD2;
+  color: #1F3D2E;
+}
+
+.cart-page__continue:hover {
+  background: #D8D2C2;
+}
+
+.cart-page__checkout {
+  background: #1F3D2E;
+  color: #FFFFFF;
+}
+
+.cart-page__checkout:hover:not(:disabled) {
+  background: #2C543E;
+}
+
+.cart-page__checkout:disabled {
+  background: #B9C4BC;
+  cursor: default;
+}
+
+@media (max-width: 520px) {
+  .cart-item {
+    flex-wrap: wrap;
+  }
+}

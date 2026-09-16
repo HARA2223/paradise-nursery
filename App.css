@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.landing-page {
+  min-height: 100vh;
+}
+
+.landing-page__hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Background image: a soft, tileable leaf pattern layered over a deep
+     green gradient so the hero reads as a lush nursery backdrop without
+     depending on any externally hosted photo. */
+  background-image:
+    linear-gradient(rgba(10, 40, 28, 0.72), rgba(10, 40, 28, 0.72)),
+    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Crect width='160' height='160' fill='%23163D2B'/%3E%3Cg fill='%231F5A3E'%3E%3Cpath d='M20 20 C10 35 15 55 35 60 C40 40 35 25 20 20 Z'/%3E%3Cpath d='M120 30 C105 40 105 60 120 70 C135 60 135 40 120 30 Z'/%3E%3Cpath d='M40 100 C25 105 20 125 35 135 C50 125 50 105 40 100 Z'/%3E%3Cpath d='M130 110 C115 115 115 135 130 145 C145 135 145 115 130 110 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover, 160px 160px;
+  background-position: center, center;
+  background-repeat: no-repeat, repeat;
+}
+
+.landing-page__overlay {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 32px;
+  max-width: 640px;
+}
+
+.landing-page__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 700;
+  margin: 0 0 12px;
+  letter-spacing: 0.01em;
+}
+
+.landing-page__tagline {
+  font-size: 1.1rem;
+  color: #DCEFE2;
+  margin: 0 0 32px;
+  line-height: 1.6;
+}
+
+.landing-page__cta {
+  background: #E7B84B;
+  color: #1F3D2E;
+  border: none;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.landing-page__cta:hover {
+  background: #F2C766;
+  transform: translateY(-1px);
+}
+
+.landing-page__cta:active {
+  transform: translateY(0);
+}

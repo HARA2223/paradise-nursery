@@ -1,0 +1,145 @@
+.product-page {
+  min-height: 100vh;
+  background: #F4F1EA;
+}
+
+/* --- Navbar --- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1F3D2E;
+  color: #FFFFFF;
+  padding: 14px 28px;
+}
+
+.navbar__brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.navbar__link {
+  background: none;
+  border: none;
+  color: #E7EFE9;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 6px 4px;
+}
+
+.navbar__link:hover {
+  color: #E7B84B;
+}
+
+.navbar__cart {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar__cart-count {
+  background: #E7B84B;
+  color: #1F3D2E;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 2px 7px;
+  border-radius: 999px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* --- Product listing --- */
+.product-listing {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 24px 72px;
+}
+
+.product-category {
+  margin-bottom: 48px;
+}
+
+.product-category__title {
+  font-family: 'Poppins', sans-serif;
+  color: #1F3D2E;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #D8D2C2;
+  padding-bottom: 8px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #FFFFFF;
+  border: 1px solid #E4DFD2;
+  border-radius: 6px;
+  padding: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card__thumbnail {
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.product-card__name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #1F3D2E;
+  margin: 0 0 6px;
+}
+
+.product-card__price {
+  color: #5A6B60;
+  font-weight: 500;
+  margin: 0 0 14px;
+}
+
+.product-card__button {
+  width: 100%;
+  background: #1F3D2E;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.product-card__button:hover:not(:disabled) {
+  background: #2C543E;
+}
+
+.product-card__button:disabled {
+  background: #B9C4BC;
+  cursor: default;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
